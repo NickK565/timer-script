@@ -1,0 +1,28 @@
+.promotion-timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;    
+}
+
+.timer{
+    text-align: center;
+    margin-top: 200px;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.timer-block{
+    height: 150px;
+    padding: 20px;
+    box-shadow:  0 0 10px rgba(0,0, 0, 0.5);
+}
+
+#days,#hours, #minutes, #seconds{
+    margin: 40px;
+    font-size: 100px;
+    font-weight: bold;
+
+}
