@@ -1,5 +1,5 @@
 
-let deadLine = '2021-05-12';
+let deadLine = '2021-08-31';
 
 
     
@@ -22,6 +22,15 @@ let deadLine = '2021-05-12';
         
     }
 
+    function getZero(num) {
+        if (num >= 0 && num < 10) {
+            return `0${num}`;
+        }else{
+            return num;
+        }
+    }
+
+
     function setClock(selector, endTime) {
         let timer = document.querySelector(selector),
             days = timer.querySelector('#days'),
@@ -36,10 +45,10 @@ let deadLine = '2021-05-12';
         function updateClock() {
             const t = getTimeRemaining(endTime);
 
-            days.innerHTML = t.days; 
-            hours.innerHTML = t.hours; 
-            minutes.innerHTML = t.minutes; 
-            seconds.innerHTML = t.seconds; 
+            days.innerHTML = getZero(t.days); 
+            hours.innerHTML = getZero(t.hours); 
+            minutes.innerHTML = getZero(t.minutes); 
+            seconds.innerHTML = getZero(t.seconds); 
 
             if (t.total <= 0){
                 clearInterval(timeInterval);
