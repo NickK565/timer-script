@@ -1,5 +1,5 @@
 
-let deadLine = '2021-08-31';
+let deadLine = '2021-12-30';
     
 
     function getTimeRemaining(endTime) {
